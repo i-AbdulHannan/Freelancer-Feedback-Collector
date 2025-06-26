@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <title>Leave a Testimonial</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+
+  <body
+    class="font-serif bg-gradient-to-tr from-brand-400 dark:from-gray-400 dark:via-slate-800 dark:to-gray-400 min-h-screen flex flex-col"
+  >
+    <main class="flex-1 grid place-items-center p-4">
+      <form
+        id="testimonialForm"
+        class="w-full max-w-lg bg-white/10 backdrop-blur-md text-white rounded-2xl shadow-2xl p-6 sm:p-8 space-y-4"
+      >
+        <h2
+          class="text-2xl font-semibold text-center text-brand-700 text-gray-800 font-serif"
+        >
+          Tell us how we did!
+        </h2>
+
+        <div class="space-y-3">
+          <input
+            id="name"
+            required
+            placeholder="Name"
+            class="w-full bg-slate-800 dark:text-white rounded-lg p-4 shadow-inner focus:bg-slate-800"
+          />
+          <input
+            id="city"
+            required
+            placeholder="City / Country"
+            class="w-full rounded-md bg-slate-800 dark:text-white p-3"
+          />
+        </div>
+
+        <select
+          id="serviceSelect"
+          class="w-full p-2 border rounded text-white bg-slate-800"
+        >
+          <option value="">Choose Service</option>
+          <option value="web-dev">Web Development</option>
+          <option value="web-design">Web Design</option>
+          <option value="graphic">Graphic Design</option>
+          <option value="graphic">App development</option>
+          <option value="graphic">web App</option>
+          <option value="graphic">SAAS</option>
+          <option value="graphic">Wordpress</option>
+        </select>
+
+        <div id="subServiceGroup" class="hidden text-white bg-slate-800">
+          <select
+            id="subServiceSelect"
+            class="w-full p-2 border rounded bg-slate-800"
+          >
+            <option value="">what did you get</option>
+          </select>
+        </div>
+
+        <div
+          class="bg-white dark:bg-slate-800 p-2 rounded-lg shadow-inner text-center"
+        >
+          <p class="mb-2 font-medium dark:text-white">Rate our work</p>
+          <div class="p-2 rounded-xl shadow-md content-center">
+            <div id="stars" class="flex text-xl cursor-pointer justify-center">
+              <span data-value="1" class="star text-gray-400">&#9733;</span>
+              <span data-value="2" class="star text-gray-400">&#9733;</span>
+              <span data-value="3" class="star text-gray-400">&#9733;</span>
+              <span data-value="4" class="star text-gray-400">&#9733;</span>
+              <span data-value="5" class="star text-gray-400">&#9733;</span>
+            </div>
+          </div>
+        </div>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="2"
+          required
+          placeholder="Your feedback…"
+          class="w-full bg-slate-800 dark:text-white rounded-lg p-4 shadow-inner focus:outline-brand-400"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="w-full py-3 rounded-xl font-semibold bg-white text-slate-800 bg-brand-700 hover:bg-brand-400 transition-all shadow-lg"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <footer class="text-center text-white/80 mb-4">
+      &copy; 2025 AH Freelance Hub
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
