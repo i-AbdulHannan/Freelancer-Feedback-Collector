@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db   = 'testimonial_app';
-$user = 'root'; // change if using hosting
-$pass = '';     // change if using hosting
+$user = 'root'; 
+$pass = '';     
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);

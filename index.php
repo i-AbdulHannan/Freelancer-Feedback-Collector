@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <option value="wordpress">WordPress</option>
       </select>
 
-      <input name="type" required placeholder="What did you get (e.g., Landing Page)" class="w-full bg-slate-800 dark:text-white rounded-lg p-4 shadow-inner" />
+      <input name="type" required placeholder="What did you get (Logo, E-commerce Website etc)" class="w-full bg-slate-800 dark:text-white rounded-lg p-4 shadow-inner" />
 
       <select name="rating" required class="w-full p-2 border rounded text-white bg-slate-800">
         <option value="">Rate our work</option>
